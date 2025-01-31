@@ -5,14 +5,14 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.SQLException;
-
+import java.sql.*;
 
 
 public class MySQL {
 
-    private static final String url = "jdbc:mysql://localhost:3305/mydb";
+    private static final String url = "jdbc:mysql://localhost:3306/mydb";
     private static final String user = "root";
-    private static final String password = "P@ssw0rd";
+    private static final String password = "p@ssw0rd2281337AA*";
 
 
     // Переменные Java DataBaseConnectivity для открытия и управления соединениями
