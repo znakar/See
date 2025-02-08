@@ -15,7 +15,7 @@ public class MySQL {
     // Данные для подключения к базе данных
     private static final String URL = "jdbc:mysql://localhost:3306/mydb";
     private static final String USER = "root";
-    private static final String PASSWORD = "p@ssw0rd2281337AA*";
+    private static final String PASSWORD = "password";
 
     /**
      * Метод для получения соединения с базой данных.
@@ -25,7 +25,7 @@ public class MySQL {
      */
     public static Connection getConnection() throws SQLException {
         try {
-            // Регистрируем драйвер (необязательно для современных версий JDBC)
+            // Регистрируем драйвер 
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             logger.log(Level.SEVERE, "MySQL JDBC Driver не найден.", e);
